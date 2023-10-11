@@ -1,0 +1,63 @@
+<template>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col slds-size_6-of-12">
+            <span>
+                <lightning-card title="Navigate to External Web Page">
+                    <lightning-button variant="brand" label="Navigate to External Web Page"
+                        onclick={handleExternalUrlClick} class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to Home">
+                    <lightning-button variant="brand" label="Navigate to Home" onclick={handleHomeClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to Chatter">
+                    <lightning-button variant="brand" label="Navigate to Chatter" onclick={handleChatterClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to New Record Page">
+                    <lightning-button variant="brand" label="Navigate to New Record" onclick={handleNewRecordClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to New Record Page with default Values">
+                    <lightning-button variant="brand" label="Navigate to New Record with Default values"
+                        onclick={handleNewDefaultRecordClick} class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to List View">
+                    <lightning-button variant="brand" label="Navigate to List view" onclick={handleListViewClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+            </span>
+        </div>
+        <div class="slds-col slds-size_6-of-12">
+            <span>
+                <lightning-card title="Navigate to files">
+                    <lightning-button variant="brand" label="Navigate to files" onclick={handleFilesClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to Record Page">
+                    <lightning-button variant="brand" label="Navigate to Record View Page"
+                        onclick={handleRecordViewClick} class="slds-m-left_x-small"></lightning-button><br><br>
+                    <lightning-button variant="brand" label="Navigate to Record Edit Page"
+                        onclick={handleRecordEditClick} class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to Tab">
+                    <lightning-button variant="brand" label="Navigate to Tab" onclick={handleTabClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to Record Relationship Page">
+                    <lightning-button variant="brand" label="Navigate to Record Relationship Page"
+                        onclick={handleRecordRelationshipClick} class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Navigate to LWC">
+                    <lightning-button variant="brand" label="Navigate to LWC" onclick={handleLWCClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+                <lightning-card title="Current page Reference">
+                    <lightning-button variant="brand" label="Current page Reference" onclick={handleCurrentClick}
+                        class="slds-m-left_x-small"></lightning-button>
+                </lightning-card>
+            </span>
+        </div>
+    </div>
+
+</template>

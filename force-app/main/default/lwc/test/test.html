@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Case List">
+        <template if:true={caseRecords}>
+            <ul class="slds-list_horizontal">
+                <template for:each={caseRecords} for:item="caseRecord">
+                    <li key={caseRecord.Id}>
+                        {caseRecord.Subject}
+                        <lightning-button
+                            label="View"
+                            variant="base"
+                            title="View Case"
+                            data-case-id={caseRecord.Id}
+                            onclick={handleRecordClick}
+                        ></lightning-button>
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template if:false={caseRecords}>
+            <p>No case records found.</p>
+        </template>
+    </lightning-card>
+</template>
